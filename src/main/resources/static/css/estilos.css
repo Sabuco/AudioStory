@@ -1,0 +1,135 @@
+
+body{
+    background-color: #f8f9fa;
+}
+
+#navbar {
+    background: rgba(43,43,43,1);
+    background: -moz-linear-gradient(left, rgba(43,43,43,1) 0%, rgba(3,34,145,1) 82%, rgba(0,20,107,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(43,43,43,1)), color-stop(82%, rgba(3,34,145,1)), color-stop(100%, rgba(0,20,107,1)));
+    background: -webkit-linear-gradient(left, rgba(43,43,43,1) 0%, rgba(3,34,145,1) 82%, rgba(0,20,107,1) 100%);
+    background: -o-linear-gradient(left, rgba(43,43,43,1) 0%, rgba(3,34,145,1) 82%, rgba(0,20,107,1) 100%);
+    background: -ms-linear-gradient(left, rgba(43,43,43,1) 0%, rgba(3,34,145,1) 82%, rgba(0,20,107,1) 100%);
+    background: linear-gradient(to right, rgba(43,43,43,1) 0%, rgba(3,34,145,1) 82%, rgba(0,20,107,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#00146b', GradientType=1 );
+}
+
+#imageStory {
+    width: 300px;
+    height: 350px;
+}
+
+#imageSearch{
+    width: 100px;
+    height: 140px;
+}
+
+#Logo {
+    width: 70px;
+    height: 70px;
+}
+
+span.error {
+    color: red;
+}
+
+#Portada {
+    width: 180px;
+    height: 260px;
+}
+#imageStory{
+    position: absolute;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+div.view.overlay:hover img#imageStory{
+    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+    border-radius: 10px;
+    position: absolute;
+}
+
+i.fas.fa-edit {
+    opacity: 0;
+    font-size: 80px;
+    position: absolute;
+    margin-top: 0px;
+    top: 140px;
+    left: 120px;
+}
+
+div.view.overlay{
+    position: relative;
+    height: 350px;
+}
+
+div.view.overlay:hover i.fas.fa-edit{
+    /*padding-bottom: 400px;*/
+    opacity: 1;
+}
+
+#carrusel {
+    float: left;
+    width: 600px;
+    overflow: hidden;
+    height: 203px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 240px;
+
+}
+
+#carrusel .left-arrow {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -9px;
+}
+
+#carrusel .right-arrow {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.carrusel {
+    width: 4000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+}
+
+.carrusel>div {
+    float: left;
+    height: 203px;
+    margin-right: 5px;
+    width: 195px;
+    text-align: center;
+}
+
+.carrusel img {
+    cursor: pointer;
+}
+
+.product {
+    border: #CCCCCC 1px solid;
+}
+
+div.capitule {
+    width: 60%;
+    margin: 15px;
+    padding: 15px;
+    background-color: #cccccc;
+    border: 2px solid #cccccc;
+    padding: 10px;
+    border-radius: 25px;
+
+}

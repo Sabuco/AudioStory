@@ -1,0 +1,60 @@
+
+  <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="${pageContext.request.contextPath}/home">
+        <img id="Logo" src="${pageContext.request.contextPath}/images/LogoWebFondoTransparente.png" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="container">
+          
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <form action="${pageContext.request.contextPath}/story/search" class="form-inline my-2 my-lg-0" method="GET">
+          
+          <input name="title" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <li class="nav-item">
+          <a class="nav-link" href="/story/-1">Lectura aleatoria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${pageContext.request.contextPath}/challenges/list">Lista desafios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${pageContext.request.contextPath}/story/addStory/0">Nueva historia</a>
+        </li>
+      </ul>
+
+      <c:choose>
+        <c:when test="${pageContext.request.userPrincipal.name != null}">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="${pageContext.request.contextPath}/user/getUserLogged"><span class="fas fa-sign-in-alt"></span> ${pageContext.request.userPrincipal.name}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="${pageContext.request.contextPath}/logout"><span class="fas fa-sign-in-alt"></span> Cerrar session</a>
+            </li>
+          </ul>
+        </c:when> 
+
+        <c:otherwise>
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="${pageContext.request.contextPath}/registration"><span class="fas fa-user"></span> Registrate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="${pageContext.request.contextPath}/login"><span class="fas fa-sign-in-alt"></span> Iniciar sesion</a>
+            </li>
+          </ul>
+        </c:otherwise>
+
+    </c:choose>
+
+     
+     
+    </div>
+  </div>
+  </nav>

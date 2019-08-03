@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Hoja de estilo ahora -->
+        <link rel="stylesheet" href="registro.css">
+        <title>Registrate</title>
+    </head>
+    <body class="text-center">
+       
+        <form class="form-main" method="POST" action="${pageContext.request.contextPath}/Users">
+            <img class="mb-4" src="/images/LogoWebFondoTransparente.png" alt="" width="288px" height="288px"> 
+            <h1 class="h3 mb-3 font-weight-normal">Crea tu cuenta</h1>  
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Introduce tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="nick">Nickname</label>
+                <input type="text" class="form-control" id="inputNick" placeholder="Introduce tu nombre de usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="inputEmail" placeholder="Email@ejemplo.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="inputPass" placeholder="Password" required>
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+
+
+
+    </body>
+</html>
